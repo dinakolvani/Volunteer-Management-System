@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/dinak./Documents/VS Code Programs/Volunteer Management System/VolunteerManagementSystem/VolunteerManagementSystem.csproj": {}
+    "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj": {}
   },
   "projects": {
-    "/Users/dinak./Documents/VS Code Programs/Volunteer Management System/VolunteerManagementSystem/VolunteerManagementSystem.csproj": {
+    "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/dinak./Documents/VS Code Programs/Volunteer Management System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
+        "projectUniqueName": "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
         "projectName": "VolunteerManagementSystem",
-        "projectPath": "/Users/dinak./Documents/VS Code Programs/Volunteer Management System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
-        "packagesPath": "/Users/dinak./.nuget/packages/",
-        "outputPath": "/Users/dinak./Documents/VS Code Programs/Volunteer Management System/VolunteerManagementSystem/obj/",
+        "projectPath": "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
+        "packagesPath": "/Users/emily/.nuget/packages/",
+        "outputPath": "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/dinak./.nuget/NuGet/NuGet.Config"
+          "/Users/emily/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
