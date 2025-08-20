@@ -17,85 +17,85 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VolunteerManagementSystem
 build_property.RootNamespace = VolunteerManagementSystem
-build_property.ProjectDir = /Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/
+build_property.ProjectDir = /Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem
+build_property.MSBuildProjectDirectory = /Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Admin/Index.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Admin/Login.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Admin/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Create.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdHkvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Delete.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdHkvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Edit.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdHkvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Index.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdHkvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Matches.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Opportunity/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvT3Bwb3J0dW5pdHkvTWF0Y2hlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/Error.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/_Layout.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Create.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Delete.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Edit.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Index.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Matches.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/Matches.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL01hdGNoZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/_VolunteerForm.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/Volunteer/_VolunteerForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVm9sdW50ZWVyL19Wb2x1bnRlZXJGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/_ViewImports.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/Views/_ViewStart.cshtml]
+[/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

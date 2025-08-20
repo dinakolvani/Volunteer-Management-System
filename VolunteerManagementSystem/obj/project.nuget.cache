@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wS4vpMaNn9k=",
+  "dgSpecHash": "Y5AwKL1AA94=",
   "success": true,
-  "projectFilePath": "/Users/emily/Library/CloudStorage/OneDrive-UniversityofNorthFlorida/Volunteering Management System/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
+  "projectFilePath": "/Users/emily/Downloads/LatestVMSPull0820/Volunteer-Management-System/VolunteerManagementSystem/VolunteerManagementSystem.csproj",
   "expectedPackageFiles": [
     "/Users/emily/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/emily/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

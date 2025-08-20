@@ -20,7 +20,7 @@ namespace VolunteerManagementSystem.Controllers
             if (model.Username == "admin" && model.Password == "password")
             {
                 HttpContext.Session.SetString("AdminUser", model.Username);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Admin");
             }
 
             ViewBag.Error = "Invalid username or password";
