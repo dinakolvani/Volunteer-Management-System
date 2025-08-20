@@ -1,31 +1,51 @@
-public class Volunteer
+using System.ComponentModel.DataAnnotations;
+using Microsoft.Build.Framework;
+using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
+
+namespace VolunteerManagementSystem.Models
 {
-    public int Id { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
-    public string Username { get; set; }
-    public string Password { get; set; } // Later, store hashed if serious
-    public string PreferredCenters { get; set; }
-    public string SkillsInterests { get; set; }
-    public string Availability { get; set; }
-    public string Address { get; set; }
-    public string PhoneHome { get; set; }
-    public string PhoneWork { get; set; }
-    public string PhoneCell { get; set; }
-    public string Email { get; set; }
-    public string Education { get; set; }
-    public string Licenses { get; set; }
+    public enum VolunteerStatus
+    {
+        ApprovedPending,   // represents "Approved / Pending Approval"
+        Approved,
+        PendingApproval,
+        Disapproved,
+        Inactive,
+        All
+    }
 
-    // Emergency Contact Info
-    public string EmergencyName { get; set; }
-    public string EmergencyPhoneHome { get; set; }
-    public string EmergencyPhoneWork { get; set; }
-    public string EmergencyEmail { get; set; }
-    public string EmergencyAddress { get; set; }
+        public class Volunteer
+        {
+            public int Id { get; set; }
 
-    // Documents
-    public bool HasDriversLicense { get; set; }
-    public bool HasSocialSecurityCard { get; set; }
+            public string FirstName { get; set; } = string.Empty;
+            public string LastName { get; set; } = string.Empty;
+            public string Username { get; set; } = string.Empty;
+            public string Password { get; set; } = string.Empty;
 
-    public string ApprovalStatus { get; set; } // "Approved", "Pending", etc.
-}
+            public string CentersPreferred { get; set; } = string.Empty;
+            public string SkillsInterests { get; set; } = string.Empty;
+
+            public string Availability { get; set; } = string.Empty;
+
+            public string Address { get; set; } = string.Empty;
+            public string HomePhone { get; set; } = string.Empty;
+            public string WorkPhone { get; set; } = string.Empty;
+            public string CellPhone { get; set; } = string.Empty;
+            public string Email { get; set; } = string.Empty;
+            public string EducationalBackground { get; set; } = string.Empty;
+            public string CurrentLicenses { get; set; } = string.Empty;
+
+            public string EmergencyContactName { get; set; } = string.Empty;
+            public string EmergencyContactPhone { get; set; } = string.Empty;
+            public string EmergencyContactEmail { get; set; } = string.Empty;
+            public string EmergencyContactAddress { get; set; } = string.Empty;
+
+            public bool HasDriversLicenseOnFile { get; set; }
+            public bool HasSSCardOnFile { get; set; }
+
+            public VolunteerStatus Status { get; set; }
+
+            public string InterestCategory { get; set; } = string.Empty;
+        }
+    }

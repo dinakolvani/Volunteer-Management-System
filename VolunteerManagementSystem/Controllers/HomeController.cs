@@ -1,31 +1,22 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using VolunteerManagementSystem.Models;
+using Microsoft.AspNetCore.Http;
 
-namespace VolunteerManagementSystem.Controllers;
-
-public class HomeController : Controller
+namespace VolunteerManagementSystem.Controllers
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    public class HomeController : Controller
     {
-        _logger = logger;
-    }
+        public IActionResult Index()
+        {
+            // Check if admin is logged in
+            var admin = HttpContext.Session.GetString("AdminUser");
+            if (string.IsNullOrEmpty(admin))
+            {
+                // Not logged in, redirect to login
+                return RedirectToAction("Login", "Admin");
+            }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
-
-    public IActionResult Privacy()
-    {
-        return View();
-    }
-
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            // Logged in: show admin dashboard
+            return View();
+        }
     }
 }

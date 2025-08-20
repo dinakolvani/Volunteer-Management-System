@@ -1,6 +1,14 @@
-// Models/AdminUser.cs
-public class AdminUser
+using System.ComponentModel.DataAnnotations;
+
+namespace VolunteerManagementSystem.Models
 {
-    public string Username { get; set; }
-    public string Password { get; set; }
+    public class AdminUser
+    {
+        [Required]
+        public string Username { get; set; } = string.Empty;
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; } = string.Empty;
+    }
 }

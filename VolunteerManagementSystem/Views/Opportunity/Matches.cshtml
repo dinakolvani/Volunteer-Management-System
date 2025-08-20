@@ -1,0 +1,42 @@
+@model IEnumerable<VolunteerManagementSystem.Models.Volunteer>
+
+@{
+    var opportunity = ViewBag.Opportunity;
+    ViewData["Title"] = "Matched Volunteers";
+}
+
+<h2>Volunteers matched with opportunity: @opportunity.Title</h2>
+
+<!-- Back button -->
+<a asp-action="Index" class="btn btn-secondary mb-3">← Back to Opportunities</a>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">
+        No volunteers matched this opportunity's category.
+    </div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Interest Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var v in Model)
+            {
+                <tr>
+                    <td>@v.FirstName</td>
+                    <td>@v.LastName</td>
+                    <td>@v.Email</td>
+                    <td>@v.InterestCategory</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

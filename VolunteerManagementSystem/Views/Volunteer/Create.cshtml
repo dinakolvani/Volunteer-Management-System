@@ -1,0 +1,135 @@
+@model VolunteerManagementSystem.Models.Volunteer
+
+@{
+    ViewData["Title"] = "Create Volunteer";
+}
+
+<h2>Create Volunteer</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group mb-3">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="CentersPreferred">Centers Preferred</label>
+        <input asp-for="CentersPreferred" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="SkillsInterests">Skills/Interests</label>
+        <input asp-for="SkillsInterests" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Availability">Availability Times</label>
+        <input asp-for="Availability" class="form-control" placeholder="e.g. Weekdays, Evenings" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="HomePhone">Home Phone</label>
+        <input asp-for="HomePhone" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="WorkPhone">Work Phone</label>
+        <input asp-for="WorkPhone" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="CellPhone">Cell Phone</label>
+        <input asp-for="CellPhone" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="EducationalBackground"></label>
+        <input asp-for="EducationalBackground" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="CurrentLicenses"></label>
+        <input asp-for="CurrentLicenses" class="form-control" />
+    </div>
+
+    <h4>Emergency Contact</h4>
+    <div class="form-group mb-3">
+        <label asp-for="EmergencyContactName"></label>
+        <input asp-for="EmergencyContactName" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="EmergencyContactPhone">Home/Work Phone</label>
+        <input asp-for="EmergencyContactPhone" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="EmergencyContactEmail"></label>
+        <input asp-for="EmergencyContactEmail" class="form-control" />
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="EmergencyContactAddress"></label>
+        <input asp-for="EmergencyContactAddress" class="form-control" />
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="HasDriversLicenseOnFile" class="form-check-input" type="checkbox" />
+        <label asp-for="HasDriversLicenseOnFile" class="form-check-label">Driver’s License on File</label>
+    </div>
+
+    <div class="form-check mb-3">
+        <input asp-for="HasSSCardOnFile" class="form-check-input" type="checkbox" />
+        <label asp-for="HasSSCardOnFile" class="form-check-label">Social Security Card on File</label>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Status">Approval Status</label>
+        <select asp-for="Status" class="form-control"
+            asp-items="Html.GetEnumSelectList<VolunteerManagementSystem.Models.VolunteerStatus>()"></select>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="InterestCategory">Interest Category</label>
+        <select asp-for="InterestCategory" class="form-control">
+            <option value="Animals">Animals</option>
+            <option value="Foodbank">Foodbank</option>
+            <option value="Community">Community</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Children">Children</option>
+            <option value="Environment">Environment</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

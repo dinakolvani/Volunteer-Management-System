@@ -1,0 +1,92 @@
+@using Microsoft.AspNetCore.Http
+@model IEnumerable<VolunteerManagementSystem.Models.Volunteer>
+
+@{
+    ViewData["Title"] = "Volunteers";
+}
+
+<h2>Volunteers</h2>
+
+<!-- Add New Volunteer Button -->
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Volunteer</a>
+
+<!-- Search + Filter Form -->
+<form asp-action="Index" method="get" class="mb-3 d-flex align-items-center">
+
+    <!-- Status Filter -->
+    <label class="me-2">Status Filter:</label>
+    <select name="filter" onchange="this.form.submit()">
+    @{
+        var options = new[] { "Approved/Pending Approval", "Approved", "Pending Approval", "Disapproved", "Inactive", "All" };
+        var current = ViewData["CurrentFilter"]?.ToString() ?? "All";
+
+        foreach (var status in options)
+        {
+            <option value="@status" selected="@(status == current ? "selected" : null)">@status</option>
+        }
+    }
+</select>
+
+<!-- Interest Category Filter -->
+    <label class="ms-3 me-2">Category:</label>
+    <select name="category" onchange="this.form.submit()" class="form-control me-2" style="width:200px;">
+    @{
+        var categories = new[] { "All", "Animals", "Foodbank", "Community", "Healthcare", "Children", "Environment" };
+        var currentCategory = ViewData["CurrentCategory"]?.ToString() ?? "All";
+
+        foreach (var cat in categories)
+        {
+            <option value="@cat" selected="@(cat == currentCategory ? "selected" : null)">@cat</option>
+        }
+    }
+</select>
+
+    <!-- Search Input -->
+    <label class="me-2">Search:</label>
+    <input type="text" name="searchString" value="@ViewData["CurrentSearch"]" class="form-control me-2" style="width:200px;" placeholder="First, Last, or Email" />
+
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+<!-- Table of Volunteers -->
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Status</th>
+            <th>Interest Category</th>
+            <th>Edit/Delete</th>
+        </tr>
+    </thead>
+   <tbody>
+@if (!Model.Any())
+{
+    <tr>
+        <td colspan="6" class="text-center text-danger">
+            No volunteers matched the search criteria.
+        </td>
+    </tr>
+}
+else
+{
+    foreach (var v in Model)
+    {
+        <tr>
+            <td>@v.FirstName</td>
+            <td>@v.LastName</td>
+            <td>@v.Email</td>
+            <td>@v.Status</td>
+            <td>@v.InterestCategory</td>
+            <td>
+                <a asp-action="Matches" asp-route-id="@v.Id" class="btn btn-sm btn-info">View Matches</a>
+                <a asp-action="Edit" asp-route-id="@v.Id" class="btn btn-sm btn-warning">Edit</a>
+                <a asp-action="Delete" asp-route-id="@v.Id" class="btn btn-sm btn-danger">Delete</a>
+            </td>
+        </tr>
+    }
+}
+</tbody>
+</table>
+ 

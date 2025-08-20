@@ -1,0 +1,66 @@
+@model VolunteerManagementSystem.Models.AdminUser
+
+@{
+    Layout = "_Layout"; 
+    ViewData["Title"] = "Admin Login";
+}
+
+<!-- Full-page pastel background -->
+<div class="d-flex justify-content-center align-items-center vh-100" 
+     style="background: linear-gradient(135deg, #ffd3e0, #c5f0f1);">
+
+    <!-- Login card -->
+    <div class="card shadow-lg rounded-4" style="width: 400px; background-color: #fff8f0;">
+        
+        <!-- Card header -->
+        <div class="card-header text-center rounded-top-4" style="background-color: #ffb6b9;">
+            <h3 class="mb-0" style="color: #fff;">Admin Login</h3>
+        </div>
+
+        <!-- Card body -->
+        <div class="card-body p-4">
+
+            <form asp-action="Login" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                <!-- Username -->
+                <div class="mb-3">
+                    <label asp-for="Username" class="form-label fw-bold"></label>
+                    <input asp-for="Username" class="form-control rounded-pill" placeholder="Enter username" />
+                    <span asp-validation-for="Username" class="text-danger"></span>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label asp-for="Password" class="form-label fw-bold"></label>
+                    <input asp-for="Password" class="form-control rounded-pill" placeholder="Enter password" type="password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+
+                <!-- Submit button -->
+                <div class="d-grid">
+                    <button type="submit" class="btn" style="background-color: #ffb6b9; color: #fff; border-radius: 50px;">
+                        Login
+                    </button>
+                </div>
+
+                <!-- Error message -->
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-danger mt-3 rounded-pill text-center">
+                        @ViewBag.Error
+                    </div>
+                }
+            </form>
+        </div>
+
+        <!-- Card footer -->
+        <div class="card-footer text-center small rounded-bottom-4" style="background-color: #ffe3e0; color: #333;">
+            Volunteer Management System © 2025
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
